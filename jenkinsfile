@@ -11,6 +11,9 @@ node
 		sh "python tests.py"
 	}
 
+	stage("Build"){
+		sh "docker build
+	}
 
 
 }

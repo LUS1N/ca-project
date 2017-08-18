@@ -1,4 +1,8 @@
-node {
+node 
+
+	stage("Preparation"){
+		checkout scm
+	}{
 	stage("Test"){
 		sh "python test.py"
 	}

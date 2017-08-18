@@ -2,6 +2,9 @@ node
 {
 	stage("Preparation"){
 		checkout scm
+	
+		// install deps
+		sh "pip install --no-cache-dir -r requirements.txt"
 	}
 	
 	stage("Test"){

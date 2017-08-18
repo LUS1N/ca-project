@@ -12,6 +12,7 @@ node
 	}
 
 	stage("Build"){
+		// build image
 		sh "docker build ."
 	}
 
